@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: relative;
+}
+
 .nav-uk {
     width: 100%;
     text-align: center;
@@ -29,12 +37,12 @@
     color: black !important;
 }
 
-.navbar-item {
-    color: black !important;
+.navbar .nav-pertama .navbar-nav .nav-item .nav-link:hover {
+    transition: 0.6s;
 }
 
-.navbar-nav:hover {
-    color: aqua;
+.navbar-item:hover {
+    transition: 0.6s;
 }
 
 .background-button {
@@ -104,6 +112,10 @@
     height: 94vh;
 }
 
+.card-body-paket {
+    height: 80vh;
+}
+
 .card-title {
     margin-top: 15px;
 }
@@ -116,8 +128,32 @@
     width: 100px;
     height: 35px;
     border-radius: 50px;
-    margin-top: 45px;
+    margin-top: 50px;
     margin-left: 95px;
+}
+
+.page-scroll-paket {
+    background-color: #00bfd8;
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    margin-top: 45px;
+    margin-left: 125px;
+}
+
+.page-scroll-request {
+    background-color: #00bfd8;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 45px;
+    margin-left: 45px;
 }
 
 .media-body {
@@ -141,6 +177,53 @@
     background-color: #00bfd85e;
 }
 
-.nav a:hover {
-    transition: 0.3s;
+.email {
+    color: #00bfd8;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: none;
+    color: rgba(30, 190, 30, 0.877);
+}
+
+.font-custom a {
+    text-decoration: none;
+    color: black;
+}
+
+.font-ori {
+    font-size: 25px;
+    margin-left: 70px;
+}
+
+.request {
+    border: none;
+    border-bottom: 2px solid #00bfd8;
+}
+
+.request:hover {
+    border-bottom: 4px solid rgba(30, 190, 30, 0.877);
+    border-radius: none;
+}
+
+.date {
+    border: none;
+    border-bottom: 2px solid #00bfd8;
+}
+
+.date:hover {
+    border-bottom: 4px solid rgba(30, 190, 30, 0.877);
+    border-radius: none;
+}
+
+.kembali {
+    color: #00bfd8;
+    margin-left: 260px;
+    font-size: 14px;
+}
+
+.kembali:hover {
+    text-decoration: none;
+    color: rgba(30, 190, 30, 0.877);
 }

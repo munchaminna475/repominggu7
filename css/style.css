@@ -132,7 +132,7 @@ nav {
     margin-left: 95px;
 }
 
-.page-scroll-paket {
+.page-scrollpaket {
     background-color: #00bfd8;
     color: white;
     font-size: 15px;
@@ -226,4 +226,13 @@ nav {
 .kembali:hover {
     text-decoration: none;
     color: rgba(30, 190, 30, 0.877);
+}
+
+.paket-bersihin {
+    color: black;
+}
+
+.paket-bersihin:hover {
+    text-decoration: none;
+    color: #00bfd8;
 }

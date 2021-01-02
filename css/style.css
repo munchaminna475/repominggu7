@@ -37,10 +37,6 @@ nav {
     color: black !important;
 }
 
-.navbar .nav-pertama .navbar-nav .nav-item .nav-link:hover {
-    transition: 0.6s;
-}
-
 .navbar-item:hover {
     transition: 0.6s;
 }
@@ -53,6 +49,10 @@ nav {
     width: 150px;
     height: 50px;
     border-radius: 50px;
+}
+
+.background-button:hover {
+    background-color: rgba(30, 190, 30, 0.877);
 }
 
 .ukuran-gambar {
@@ -132,6 +132,10 @@ nav {
     margin-left: 95px;
 }
 
+.page-scroll:hover {
+    background-color: rgba(30, 190, 30, 0.877);
+}
+
 .page-scrollpaket {
     background-color: #00bfd8;
     color: white;
@@ -144,6 +148,10 @@ nav {
     margin-left: 125px;
 }
 
+.page-scrollpaket:hover {
+    background-color: rgba(30, 190, 30, 0.877);
+}
+
 .page-scroll-request {
     background-color: #00bfd8;
     color: white;
@@ -154,6 +162,10 @@ nav {
     border-radius: 10px;
     margin-top: 45px;
     margin-left: 45px;
+}
+
+.page-scroll-request:hover {
+    background-color: rgba(30, 190, 30, 0.877);
 }
 
 .media-body {
@@ -197,22 +209,17 @@ nav {
     margin-left: 70px;
 }
 
+.font-orirequest {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
 .request {
     border: none;
     border-bottom: 2px solid #00bfd8;
 }
 
 .request:hover {
-    border-bottom: 4px solid rgba(30, 190, 30, 0.877);
-    border-radius: none;
-}
-
-.date {
-    border: none;
-    border-bottom: 2px solid #00bfd8;
-}
-
-.date:hover {
     border-bottom: 4px solid rgba(30, 190, 30, 0.877);
     border-radius: none;
 }
@@ -235,4 +242,22 @@ nav {
 .paket-bersihin:hover {
     text-decoration: none;
     color: #00bfd8;
+}
+
+.date {
+    border: none;
+    border-bottom: 2px solid #00bfd8;
+}
+
+.date:hover {
+    border-bottom: 4px solid rgba(30, 190, 30, 0.877);
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    /* color: #00bfd8 !important; */
+    border-bottom: 2px solid #00bfd8 !important;
 }

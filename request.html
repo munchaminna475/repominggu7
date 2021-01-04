@@ -49,12 +49,16 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <b><p class="font-orirequest">TROLI</p></b><br>
-                    <input class="form-control date" type="datetime-local" id="example-datetime-local-input">
-                    <input id="email" type="text" class="form-control request" name="kota" placeholder="Write city" style="margin-top:30px;">
-                    <textarea name="" id="" class="form-control request" placeholder="Write your address." cols="10" rows="4" style="margin-top: 30px;"></textarea>
-                    <a href="#"><button type="button" class="btn btn-primary page-scroll-request"><b>Checkout</b></button></a><br>
-                    <a href="paket.html" class="kembali"><b>Back</b></a>
+                    <b><p class="font-orirequest">Data Pesanan</p></b><br>
+                    <form action="#" method="post" onsubmit="validasi()">
+                        <input class="form-control date" type="datetime-local" id="example-datetime-local-input">
+                        <input id="email" type="text" class="form-control request" name="kota" placeholder="Write city" style="margin-top:30px;">
+                        <textarea name="alamat" id="alamat" class="form-control request" placeholder="Write your address." cols="10" rows="4" style="margin-top: 30px;"></textarea>
+                        <input type="submit" value="Checkout" class="tombol page-scroll-request">
+                    </form>
+                    <form action="#" method="POST" onsubmit="confirm()">
+                        <a href="paket.html" class="kembali"><b>Back</b></a>
+                    </form>
                 </div>
                 <div class="col-lg-3">
 
@@ -63,5 +67,22 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    function validasi() {
+        var date = document.getElementById("example-datetime-local-input").value;
+        var email = document.getElementById("email").value;
+        var alamat = document.getElementById("alamat").value;
+        if (date != "" && email != "" && alamat != "") {
+            return true;
+        } else {
+            alert('Lengkapi data anda terlebih dahulu')
+        }
+    }
+
+    // window.onbeforeunload = function() {
+    //     return ("apakah anda yakin meninggalkan page ini?")
+    // }
+</script>
+
 
 </html>

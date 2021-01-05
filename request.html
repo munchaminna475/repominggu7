@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bersihin</title>
-    <link rel="shortcut icon" href="images/Logo_udinus1.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Logo_udinus1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,12 +50,11 @@
                 </div>
                 <div class="col-lg-6">
                     <b><p class="font-orirequest">Data Pesanan</p></b><br>
-                    <form action="#" method="post" onsubmit="validasi()">
-                        <input class="form-control date" type="datetime-local" id="example-datetime-local-input">
-                        <input id="email" type="text" class="form-control request" name="kota" placeholder="Write city" style="margin-top:30px;">
-                        <textarea name="alamat" id="alamat" class="form-control request" placeholder="Write your address." cols="10" rows="4" style="margin-top: 30px;"></textarea>
-                        <input type="submit" value="Checkout" class="tombol page-scroll-request">
-                    </form>
+                    <input class="form-control date" type="datetime-local" id="example-datetime-local-input">
+                    <input id="email" type="text" class="form-control request" name="kota" placeholder="Write city" style="margin-top:30px;">
+                    <textarea name="alamat" id="alamat" class="form-control request" placeholder="Write your address." cols="10" rows="4" style="margin-top: 30px;"></textarea>
+                    <!-- <input type="submit" value="Checkout" class="tombol page-scroll-request" onclick="window.location.href='checkout.html'"> -->
+                    <a href="checkout.html"><button type="submit" class="page-scroll-request" onclick="window.location.href='checkout.html'">Checkout</button></a>
                     <form action="#" method="POST" onsubmit="confirm()">
                         <a href="paket.html" class="kembali"><b>Back</b></a>
                     </form>
@@ -68,20 +67,9 @@
     </div>
 </body>
 <script type="text/javascript">
-    function validasi() {
-        var date = document.getElementById("example-datetime-local-input").value;
-        var email = document.getElementById("email").value;
-        var alamat = document.getElementById("alamat").value;
-        if (date != "" && email != "" && alamat != "") {
-            return true;
-        } else {
-            alert('Lengkapi data anda terlebih dahulu')
-        }
+    window.onbeforeunload = function() {
+        return ("apakah anda yakin meninggalkan page ini?")
     }
-
-    // window.onbeforeunload = function() {
-    //     return ("apakah anda yakin meninggalkan page ini?")
-    // }
 </script>
 
 

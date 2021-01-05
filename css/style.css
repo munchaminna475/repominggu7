@@ -261,3 +261,35 @@ nav {
     /* color: #00bfd8 !important; */
     border-bottom: 2px solid #00bfd8 !important;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.date-checkout {
+    border: none;
+    border-bottom: 2px solid #00bfd8;
+    width: 240px;
+    margin-left: 50px;
+}
+
+.text-chechout {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.text-chechoutleft {
+    font-size: 15px;
+    color: rgb(121, 118, 118);
+}
+
+.kembali-checkout {
+    color: #00bfd8;
+    margin-left: 210px;
+    font-size: 14px;
+}
